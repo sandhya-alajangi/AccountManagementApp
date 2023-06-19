@@ -1,0 +1,21 @@
+{
+  "Name": "cashback.csv",
+  "IsContainsHeaderRow": true,
+  "RowDelimiter": "LineFeed",
+  "ColumnDelimiter": "comma",
+  "Fields": [
+    {
+      "Name": "AccountId",
+      "ColumnIndex": 0
+    },
+    {
+      "Name": "MeterReadingDateTime",
+      "ColumnIndex": 1
+    },
+    {
+      "Name": "MeterReadValue",
+      "ColumnIndex": 2
+    }
+  ],
+  "TextQualifier": "None"
+}

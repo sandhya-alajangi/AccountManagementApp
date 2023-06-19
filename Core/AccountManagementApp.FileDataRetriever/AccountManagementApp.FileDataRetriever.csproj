@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataObject\**" />
+    <Compile Remove="Enum\**" />
+    <EmbeddedResource Remove="DataObject\**" />
+    <EmbeddedResource Remove="Enum\**" />
+    <None Remove="DataObject\**" />
+    <None Remove="Enum\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Contracts\IDelimiters.cs" />
+    <Compile Remove="Contracts\IField.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountManagementApp.Model\AccountManagementApp.Model.csproj" />
+  </ItemGroup>
+
+</Project>
